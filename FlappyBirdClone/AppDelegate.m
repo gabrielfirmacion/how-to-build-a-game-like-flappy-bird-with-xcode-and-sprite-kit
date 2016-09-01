@@ -41,11 +41,6 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-- (GameViewController *)gameViewController
-{
-    return (GameViewController *)[[[UIApplication sharedApplication] keyWindow] rootViewController];
-}
-
 #pragma mark Skillz Delegate
 - (SkillzOrientation)preferredSkillzInterfaceOrientation
 {
@@ -54,7 +49,12 @@
 -(void)tournamentWillBegin:(NSDictionary *)gameParameters
                 withMatchInfo:(SKZMatchInfo *)matchInfo
 {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    GameViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
     
+    UIViewController *rootController = [[self window] rootViewController];
+    [rootController presentViewController:vc animated:YES completion:nil];
+   // [rootController presentViewController:vc animated:YES completion:nil];
 }
 @end
 

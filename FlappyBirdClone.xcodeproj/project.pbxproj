@@ -486,6 +486,7 @@
 					"-weak_framework",
 					PassKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flappybird.flappyBirdGabriel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -515,6 +516,7 @@
 					"-weak_framework",
 					PassKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flappybird.flappyBirdGabriel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 1;
