@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0B7E3031D7774E500C11283 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7E3021D7774E500C11283 /* Skillz.framework */; };
+		C0B7E3071D77841300C11283 /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7E3021D7774E500C11283 /* Skillz.framework */; };
+		C0B7E3081D77841300C11283 /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0B7E3021D7774E500C11283 /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0B7E3111D779CD400C11283 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B7E3101D779CD400C11283 /* Launch Screen.storyboard */; };
 		C9633FD118AC2AFF00F2E432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9633FD018AC2AFF00F2E432 /* Foundation.framework */; };
 		C9633FD318AC2AFF00F2E432 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9633FD218AC2AFF00F2E432 /* CoreGraphics.framework */; };
 		C9633FD518AC2AFF00F2E432 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9633FD418AC2AFF00F2E432 /* UIKit.framework */; };
@@ -16,7 +20,7 @@
 		C9633FE318AC2AFF00F2E432 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9633FE218AC2AFF00F2E432 /* AppDelegate.m */; };
 		C9633FE618AC2AFF00F2E432 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9633FE418AC2AFF00F2E432 /* Main_iPhone.storyboard */; };
 		C9633FE918AC2AFF00F2E432 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9633FE718AC2AFF00F2E432 /* Main_iPad.storyboard */; };
-		C9633FEC18AC2B0000F2E432 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9633FEB18AC2B0000F2E432 /* ViewController.m */; };
+		C9633FEC18AC2B0000F2E432 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9633FEB18AC2B0000F2E432 /* GameViewController.m */; };
 		C9633FEF18AC2B0000F2E432 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C9633FEE18AC2B0000F2E432 /* MyScene.m */; };
 		C9633FF318AC2B0000F2E432 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9633FF218AC2B0000F2E432 /* Images.xcassets */; };
 		C9633FFA18AC2B0000F2E432 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9633FF918AC2B0000F2E432 /* XCTest.framework */; };
@@ -42,7 +46,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C0B7E3091D77841300C11283 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C0B7E3081D77841300C11283 /* Skillz.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C0B7E3021D7774E500C11283 /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
+		C0B7E3101D779CD400C11283 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C9633FCD18AC2AFF00F2E432 /* FlappyBirdClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBirdClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9633FD018AC2AFF00F2E432 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9633FD218AC2AFF00F2E432 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,8 +76,8 @@
 		C9633FE218AC2AFF00F2E432 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C9633FE518AC2AFF00F2E432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C9633FE818AC2AFF00F2E432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C9633FEA18AC2AFF00F2E432 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C9633FEB18AC2B0000F2E432 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9633FEA18AC2AFF00F2E432 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		C9633FEB18AC2B0000F2E432 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		C9633FED18AC2B0000F2E432 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		C9633FEE18AC2B0000F2E432 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		C9633FF218AC2B0000F2E432 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -82,6 +102,8 @@
 				C9633FD318AC2AFF00F2E432 /* CoreGraphics.framework in Frameworks */,
 				C9633FD518AC2AFF00F2E432 /* UIKit.framework in Frameworks */,
 				C9633FD718AC2AFF00F2E432 /* SpriteKit.framework in Frameworks */,
+				C0B7E3071D77841300C11283 /* Skillz.framework in Frameworks */,
+				C0B7E3031D7774E500C11283 /* Skillz.framework in Frameworks */,
 				C9633FD118AC2AFF00F2E432 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +155,7 @@
 		C9633FD818AC2AFF00F2E432 /* FlappyBirdClone */ = {
 			isa = PBXGroup;
 			children = (
+				C0B7E3021D7774E500C11283 /* Skillz.framework */,
 				C963401918AC4EBA00F2E432 /* Pipe2.png */,
 				C963401A18AC4EBA00F2E432 /* Pipe1.png */,
 				C963401518AC39DD00F2E432 /* Skyline.png */,
@@ -143,11 +166,12 @@
 				C9633FE218AC2AFF00F2E432 /* AppDelegate.m */,
 				C9633FE418AC2AFF00F2E432 /* Main_iPhone.storyboard */,
 				C9633FE718AC2AFF00F2E432 /* Main_iPad.storyboard */,
-				C9633FEA18AC2AFF00F2E432 /* ViewController.h */,
-				C9633FEB18AC2B0000F2E432 /* ViewController.m */,
+				C9633FEA18AC2AFF00F2E432 /* GameViewController.h */,
+				C9633FEB18AC2B0000F2E432 /* GameViewController.m */,
 				C9633FED18AC2B0000F2E432 /* MyScene.h */,
 				C9633FEE18AC2B0000F2E432 /* MyScene.m */,
 				C9633FF218AC2B0000F2E432 /* Images.xcassets */,
+				C0B7E3101D779CD400C11283 /* Launch Screen.storyboard */,
 				C9633FD918AC2AFF00F2E432 /* Supporting Files */,
 			);
 			path = FlappyBirdClone;
@@ -192,6 +216,8 @@
 				C9633FC918AC2AFF00F2E432 /* Sources */,
 				C9633FCA18AC2AFF00F2E432 /* Frameworks */,
 				C9633FCB18AC2AFF00F2E432 /* Resources */,
+				C0B7E3091D77841300C11283 /* Embed Frameworks */,
+				C0B7E30F1D779AEC00C11283 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -264,6 +290,7 @@
 				C963401C18AC4EBA00F2E432 /* Pipe1.png in Resources */,
 				C963401B18AC4EBA00F2E432 /* Pipe2.png in Resources */,
 				C963401118AC32DA00F2E432 /* Bird2.png in Resources */,
+				C0B7E3111D779CD400C11283 /* Launch Screen.storyboard in Resources */,
 				C9633FE918AC2AFF00F2E432 /* Main_iPad.storyboard in Resources */,
 				C9633FE618AC2AFF00F2E432 /* Main_iPhone.storyboard in Resources */,
 				C963401418AC32EC00F2E432 /* Bird1.png in Resources */,
@@ -281,13 +308,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C0B7E30F1D779AEC00C11283 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\" ]; then\n/bin/sh \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Skillz.framework/postprocess.sh\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9633FC918AC2AFF00F2E432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9633FEF18AC2B0000F2E432 /* MyScene.m in Sources */,
-				C9633FEC18AC2B0000F2E432 /* ViewController.m in Sources */,
+				C9633FEC18AC2B0000F2E432 /* GameViewController.m in Sources */,
 				C9633FE318AC2AFF00F2E432 /* AppDelegate.m in Sources */,
 				C9633FDF18AC2AFF00F2E432 /* main.m in Sources */,
 			);
@@ -425,12 +468,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlappyBirdClone",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlappyBirdClone/FlappyBirdClone-Prefix.pch";
 				INFOPLIST_FILE = "FlappyBirdClone/FlappyBirdClone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-weak_framework",
+					PassKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -439,12 +497,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlappyBirdClone",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlappyBirdClone/FlappyBirdClone-Prefix.pch";
 				INFOPLIST_FILE = "FlappyBirdClone/FlappyBirdClone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-lc++",
+					"-lz",
+					"-lsqlite3",
+					"-lxml2",
+					"-weak_framework",
+					PassKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -510,6 +583,7 @@
 				C963400B18AC2B0000F2E432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C963400C18AC2B0000F2E432 /* Build configuration list for PBXNativeTarget "FlappyBirdCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +592,7 @@
 				C963400E18AC2B0000F2E432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
