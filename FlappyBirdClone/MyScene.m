@@ -7,6 +7,7 @@
 //
 
 #import "MyScene.h"
+#import <Skillz/Skillz.h>
 
 @interface MyScene () <SKPhysicsContactDelegate> {
     SKSpriteNode* _bird;
@@ -262,6 +263,19 @@ CGFloat clamp(CGFloat min, CGFloat max, CGFloat value) {
             }], [SKAction waitForDuration:0.05]]] count:4], [SKAction runBlock:^{
                 _canRestart = YES;
             }]]] withKey:@"flash"];
+            
+            if ([[Skillz skillzInstance] tournamentIsInProgress]) {
+                // The game ended and it was in a Skillz tournament,
+                // so report the score and go back to Skillz.
+                [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:NO completion:^{
+                    [[Skillz skillzInstance] displayTournamentResultsWithScore:@(_score)
+                                                                withCompletion:^{
+                                                                    // Code in this block is called when exiting to Skillz
+                                                                    // and reporting the score.
+                                                                    NSLog(@"Reporting score to Skillz…");
+                                                                }];
+                }];
+            }
         }
     }
 }
